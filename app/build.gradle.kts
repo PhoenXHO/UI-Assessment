@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.ensas.technicalassessment"
+    namespace = "com.test.technicalassessment"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.ensas.technicalassessment"
+        applicationId = "com.test.technicalassessment"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

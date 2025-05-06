@@ -1,4 +1,4 @@
-package com.ensas.technicalassessment
+package com.test.technicalassessment
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

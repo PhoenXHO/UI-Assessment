@@ -1,4 +1,4 @@
-package com.ensas.technicalassessment
+package com.test.technicalassessment
 
 import org.junit.Test
 
