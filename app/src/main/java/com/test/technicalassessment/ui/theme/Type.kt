@@ -6,6 +6,11 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
+// This file defines the typography styles used throughout the app.
+// It includes styles for body text, titles, headlines, labels, and display text.
+
+// This function is used to create a Typography object based on whether the app is in preview mode or not.
+// This is because the preview mode does not support custom fonts, so we use the default font family in that case.
 fun getTypography(isPreview: Boolean): Typography {
     val fontFamily = if (isPreview) {
         FontFamily.Default

@@ -1,4 +1,4 @@
-package com.test.technicalassessment.ui.components
+package com.test.technicalassessment.ui.components.inputs
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -27,9 +27,24 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.test.technicalassessment.ui.components.text.CText
 import com.test.technicalassessment.ui.theme.Dimensions
 import com.test.technicalassessment.ui.theme.PreviewTheme
 
+/**
+ * PrimaryButton is a customizable button component with a gradient background and optional prefix/suffix icons.
+ *
+ * @param text The text to be displayed on the button.
+ * @param modifier Modifier to be applied to the button.
+ * @param prefix Optional composable for a prefix icon or content.
+ * @param suffix Optional composable for a suffix icon or content.
+ * @param textStyle Text style for the button text. Default is `MaterialTheme.typography.titleMedium`.
+ * @param borderWidth Width of the border around the button. Default is `6.dp`.
+ * @param enabled Indicates whether the button is enabled or disabled. Default is `true`.
+ * @param verticalPadding Vertical padding inside the button. Default is `Dimensions.defaultPadding`.
+ * @param horizontalPadding Horizontal padding inside the button. Default is `Dimensions.defaultPadding`.
+ * @param onClick Callback function to be invoked when the button is clicked.
+ */
 @Composable
 fun PrimaryButton(
     text: String,
@@ -69,6 +84,7 @@ fun PrimaryButton(
 
     Box(
         modifier = modifier
+			// The order of these modifiers is important
             .border(
                 width = borderWidth,
                 color = borderColor,

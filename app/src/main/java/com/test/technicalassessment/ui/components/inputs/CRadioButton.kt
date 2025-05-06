@@ -1,4 +1,4 @@
-package com.test.technicalassessment.ui.components
+package com.test.technicalassessment.ui.components.inputs
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.clickable
@@ -27,8 +27,22 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.test.technicalassessment.ui.components.text.CText
 import com.test.technicalassessment.ui.theme.PreviewTheme
 
+/**
+ * CRadioButton is a customizable radio button component with a gradient border and checkmark icon.
+ *
+ * @param isSelected Indicates whether the radio button is selected or not.
+ * @param modifier Modifier to be applied to the radio button.
+ * @param onClick Callback function to be invoked when the radio button is clicked.
+ * @param enabled Indicates whether the radio button is enabled or disabled. Default is `true`.
+ * @param size Size of the radio button. Default is `30.dp`.
+ * @param borderWidth Width of the border around the radio button. Default is `2.5.dp`.
+ * @param interactionSource Interaction source for handling gestures and clicks.
+ *
+ * @see androidx.compose.foundation.Canvas
+ */
 @Composable
 fun CRadioButton(
     isSelected: Boolean,

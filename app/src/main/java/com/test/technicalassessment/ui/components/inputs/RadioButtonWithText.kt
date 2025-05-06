@@ -1,4 +1,4 @@
-package com.test.technicalassessment.ui.components
+package com.test.technicalassessment.ui.components.inputs
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -14,9 +14,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.test.technicalassessment.ui.components.text.CText
 import com.test.technicalassessment.ui.theme.Dimensions
 import com.test.technicalassessment.ui.theme.PreviewTheme
 
+/**
+ * RadioButtonWithText is a composable function that displays a radio button with associated text.
+ *
+ * @param text The text to be displayed next to the radio button.
+ * @param isSelected Indicates whether the radio button is selected or not.
+ * @param onClick Callback function to be invoked when the radio button is clicked.
+ * @param modifier Modifier to be applied to the radio button and text.
+ * @param enabled Indicates whether the radio button is enabled or disabled. Default is `true`.
+ */
 @Composable
 fun RadioButtonWithText(
     text: String,
@@ -29,8 +39,8 @@ fun RadioButtonWithText(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier
             .clickable(
-                interactionSource = remember { MutableInteractionSource() },
-                indication = null,
+                interactionSource = remember { MutableInteractionSource() }, // To handle clicks
+                indication = null, // No ripple effect
                 enabled = enabled,
                 role = Role.RadioButton,
                 onClick = onClick,

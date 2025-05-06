@@ -9,6 +9,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
+// This file is generated. Do not edit manually.
+
 public val arrowBackIOSNew: ImageVector
     get() {
         if (_arrowBack != null) {

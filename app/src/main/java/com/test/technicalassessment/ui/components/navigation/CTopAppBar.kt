@@ -1,4 +1,4 @@
-package com.test.technicalassessment.ui.components
+package com.test.technicalassessment.ui.components.navigation
 
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -15,6 +15,16 @@ import androidx.compose.ui.unit.dp
 import com.test.technicalassessment.ui.icons.arrowBackIOSNew
 import com.test.technicalassessment.ui.theme.PreviewTheme
 
+/**
+ * CTopAppBar is a composable function that displays a top app bar with a title and an optional back button.
+ * It uses Material3's CenterAlignedTopAppBar for consistent styling and theming.
+ *
+ * @param title The title to be displayed in the app bar.
+ * @param backActionEnabled Flag to enable or disable the back action. Default is `false`.
+ * @param onBackClick Callback function to be invoked when the back button is clicked. Default is `{}`.
+ *
+ * @see androidx.compose.material3.CenterAlignedTopAppBar
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CTopAppBar(
@@ -25,6 +35,7 @@ fun CTopAppBar(
     CenterAlignedTopAppBar(
         title = { Text(title) },
         navigationIcon = {
+			// Show back button only if backActionEnabled is true
             if (backActionEnabled) {
                 IconButton(onClick = onBackClick) {
                     Icon(

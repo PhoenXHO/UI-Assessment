@@ -11,6 +11,8 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 
+// These are the colors used for the app's theme and UI components.
+
 val DarkBlue = Color(0xFF0E0F2E)
 val LightBlue = Color(0xFF7F7F99)
 val DarkGreen = Color(0xFF09281E)
